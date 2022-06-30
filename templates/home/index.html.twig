@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+    {% include "home/presentation.html.twig" %}
+    {% include "home/services.html.twig" %}
+    {% include "home/lastarticles.html.twig" with {'articles': 'lastArticles'} %}
+{% endblock %}
